@@ -1,11 +1,147 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>hello 
-    </h1>
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!DOCTYPE html>
+        <title Accueil></title>
+        <link href="style.css" rel="stylesheet" media="all" type="text/css">
+        <script src="index.js"></script>
+    </head>
+    <header>
+        <div>
+            <a href="index.html" class="logo">
+            <div class="description">
+                <img src="assets/logo.png" class="image" alt="logo accueil" />
+                <div>Accueil</div>
+            </div>
+            </a>
+            <div class="gapfill"></div>
+            <div class="dropdown">
+                Profil
+                <div class="dropdown_content">
+                    <p></p>
+                    <a href="#aPropos">A propos</a>
+                    <a href="#btsSIO">Le BTS SIO</a>
+                    <a href="#certification">Certifications</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="">Parcours Professionnel</a>
+                    <a href="">Parcours Scolaire</a>
+                </div>
+            </div>
+            <div class="gapfill"></div>
+            <a href="projets/index.html" class="onglet">Mon CV</a>
+            <div class="gapfill"></div>
+            <a href="projets/index.html" class="onglet" >Veilles</a>
+            <div class="gapfill"></div>
+            <a href="projets/index.html" class="onglet" >Projets</a>
+            <div class="gapfill"></div>
+            <a href="projets/index.html" class="onglet" >Contact</a>
+        </div>
+    </header>
+    <body onload="currentDiv(1)">
+        <div class="mainTitleBackground"></div>
+        <div class="mainTitle">
+            <p class="line1">Théo MAS</p>
+            <p class="line2">Bienvenue sur mon</p>
+            <p class="line3">portfolio</p>
+        </div>
+        <div class="aboutTitle">
+            A propos
+        </div>
+        <div id="aPropos"></div>
+        <div class="aboutBody" >
+            <div class="styleBar"></div>
+            <div class="paragraphText">
+                Je m'appelle Théo MAS, j'ai 17 ans et je suis actuellement étudiant en <a href ="#btsSIO" class="refBTS">BTS SIO (Service Informatique aux Organisations)</a>, 
+                je suis passionné d'informatique, de jeux vidéos et de lecture.
+                C'est donc plutot naturellement que je me suis tourné vers des études d'informatique, ayant de plus toujours eu de bonnes experiences,
+                J'ai commencé par un bac Général Technologique STI2D (Sciences et Technologies de l'Industrie et du Developpement Durable) option SIN 
+                (Systemes d'Information et Numérique) et apres mon avoir obtenu mon bac mention bien, j'ai postulé au Lycée René Cassin pour ce
+                BTS SIO.
+            </div>            
+        </div>
+        <div id="btsSIO"></div>
+        <div class="btsTitle">
+            Le BTS SIO
+        </div>
+        <div class="btsBody" >
+            <div class="styleBar"></div>
+            <div class="paragraphText">
+                Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations, 
+                s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur. 
+                Pour par la suite intégrer directement le marché du travail ou continuer des études, dans le domaine de l'informatique.
+                Celui ci se divise en deux options :
+            </div>            
+        </div>
+        <img class="logoSISR" src="assets/logo_SISR.png"/>
+        <div class="btsSISRTitle">BTS SISR</div>
+        <img class="logoSLAM" src="assets/logo_SLAM.png"/>
+        <div class="btsSLAMTitle">BTS SLAM</div>
+        <div class="btsSISR">
+            <div class="styleBarSecondary"></div>
+            <div class="paragraphTextSecondary">
+                BTS SIO option SISR (Solutions d'Infrastructure, Systèmes et Réseau).<br>
+                Le titulaire du diplôme participe à la production et à la fourniture de services en réalisant ou en adaptant des solutions d’infrastructure et en assurant le fonctionnement optimal des équipements.<br>
+                Il intervient plus particulièrement dans :<br><br><br>  
+
+                -l’installation, l’intégration, l’administration, la sécurisation des équipements et des services informatiques ;<br><br>
+                -l’exploitation, la supervision et la maintenance d'une infrastructure ;<br><br>
+                -la définition et la configuration des postes clients, des serveurs et des équipements d’interconnexion, leur déploiement et leur maintenance ;<br><br>
+                -la gestion des actifs de l’infrastructure ;<br><br>
+                -la recherche de réponses adaptées à des besoins d’évolution de l’infrastructure ou à des problèmes liés à la mise à disposition des services informatiques ;<br><br>
+                -la résolution des incidents et l’assistance aux utilisateurs ;<br><br>
+                -le maintien de la qualité des services informatiques.<br><br>
+            </div>
+        </div>
+        <div class="btsSLAM">
+            <div class="styleBarSecondary"></div>
+            <div class="paragraphTextSecondary">
+                BTS SIO option SLAM (Solution Logicielles et Applications Métier).<br>
+                Le titulaire du diplôme participe à la production et à la fourniture de services en développant, 
+                en adaptant ou en maintenant des solutions applicatives. Il intervient plus particulièrement dans :<br><br><br>
+
+                -la définition des spécifications techniques à partir de l’expression des besoins des utilisateurs et des contraintes de l’organisation préalablement recensées ;<br><br>
+                -la réalisation ou l’adaptation puis la validation de solutions applicatives à l’aide des environnements de développement retenus ;<br><br>
+                -la gestion du patrimoine applicatif ;<br><br>
+                -la rédaction de la documentation d’une solution applicative et la formation des utilisateurs :<br><br>
+                -la recherche de réponses adaptées à des problèmes liés à la fourniture des services informatiques ;<br><br>
+                -l’accompagnement et l’assistance des utilisateurs ;<br><br>
+                -le maintien de la qualité des services informatiques.
+            </div>
+        </div>
+        <div id="certification"></div>
+        <img class="certifLogo" src="assets/certifLogo.png"/>
+        <div class="certifTitle">
+            Certifications
+        </div>
+        <div class="certifBody">
+            <div class="styleBar"></div>
+            <div class="paragraphText">
+                Ces connaissances on étées acquises lors de ma formation en BTS, ces formations m'ont permis d'acquerir diverses compétences informatiques.
+            </div>
+        </div>
+        <div class="slider">
+            <div class="styleBar"></div>
+            <img class="sliderImage" src="assets/placeholder.jpg">
+            <img class="sliderImage" src="assets/placeholder2.png">
+            <img class="sliderImage" src="assets/placeholder3.jpg">
+            <div class="sliderContainer">
+                <div class="sliderLeftArrow" onclick ="plusDivs(-1)">&#10094</div>
+                <div class="sliderRightArrow" onclick="plusDivs(1)">&#10095</div>
+                <span class="sliderDot" onclick="currentDiv(1)"></span>
+                <span class="sliderDot" onclick="currentDiv(2)"></span>
+                <span class="sliderDot" onclick="currentDiv(3)"></span>
+            </div>
+        </div>
+        <div id="competences"></div>
+        <img class="compLogo" src="assets/compLogo.png">
+        <div class="compTitle">
+            Compétences
+        </div>
+        <div class="compBody">
+            <div class="compCasing">
+                <div class="compStyleBar"></div>
+            </div>
+        </div>
+
+    </body>
 </html>
