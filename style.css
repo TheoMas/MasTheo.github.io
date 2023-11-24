@@ -783,11 +783,13 @@ table {
     top: 15%;
     left: 5%;
     width: 85%;
-    height: 30%;
+    height: 40%;
     display: grid;
     padding: 0% 2% 0% 2%;
-    grid-auto-flow: column dense;
-    grid-template-columns: 12% 12% 12% 12% 12% 12% 12% 12% 12%;
+    grid-auto-flow: row dense;
+    grid-auto-rows:auto ;
+    grid-auto-columns: 12%;
+    grid-auto-columns: minmax(2,10);
   }
 
   #compFirstRow{
@@ -803,12 +805,11 @@ table {
     display: flex;
     flex-direction: column;
     overflow: none;
-    padding: 0;
     align-items: center;
     top:10%;
     left:5%;
     width: 70%;
-    height: 80%;
+    height: 60%;
     border-left: 2px solid rgb(247, 80, 73);
     overflow: hidden;
   }
@@ -846,4 +847,15 @@ table {
     border:4px solid rgb(247, 80, 73);
     display:flex;
     padding: 7% 0% 0% 0% ;
+  }
+
+  .compCasedLogos {
+    position: relative;
+    top: 10%;
+    left: -2%;
+    height: 70%;
+  }
+
+  #secondRowImage{
+    top: 15%;
   }
