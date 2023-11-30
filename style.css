@@ -86,7 +86,7 @@ table {
 
     background-repeat: no-repeat;
     background-position: bottom;
-    background-color: rgba(2,3,5,255);
+    background-color: rgba(0,0,0,255);
     width: 100%;
     overflow-x: hidden;
     
@@ -128,7 +128,7 @@ table {
   }
 
 
-  .image {
+  .imageLogo {
     position: relative;
     width: 100%;
     height:100%;
@@ -137,7 +137,7 @@ table {
     transition: width 0.5s, height 0.5s, left 0.5s;
   }
 
-  .image:hover{
+  .imageLogo:hover{
     position: relative;
     width: 103%;
     height:105%;
@@ -731,8 +731,8 @@ table {
     z-index: 10;
     margin: 0 1% 0 1%;
     border-radius:80px;
-    width:1%;
-    height:9.5px;
+    width: 13px;;
+    height:13px;
     border:2px solid rgb(1, 250, 244); 
     left: 15%;
     transition: all 0.5s;
@@ -749,8 +749,8 @@ table {
     z-index: 10;
     margin: 0 1% 0 1%;
     border-radius:80px;
-    width:1%;
-    height:9.5px;
+    width:13px;
+    height:13px;
     border:2px solid rgb(1, 250, 244); 
     left: 15%;
     transition: all 0.5s;
@@ -780,24 +780,15 @@ table {
 
   .compBody{
     position: relative;
+    justify-content: left;
+    align-items: center;
     top: 15%;
     left: 5%;
-    width: 85%;
+    width: 90%;
     height: 40%;
     display: grid;
-    padding: 0% 2% 0% 2%;
-    grid-auto-flow: row dense;
-    grid-auto-rows:auto ;
-    grid-auto-columns: 12%;
-    grid-auto-columns: minmax(2,10);
-  }
-
-  #compFirstRow{
-    grid-row: 1;
-  }
-
-  #compSecondRow{
-    grid-row: 2;
+    grid-template-columns: repeat(auto-fit, 12%);
+    grid-template-rows: repeat(auto-fit,50%);
   }
 
   .compCasing {
@@ -856,6 +847,7 @@ table {
     height: 70%;
   }
 
-  #secondRowImage{
+  #adjustImage{
     top: 15%;
   }
+
