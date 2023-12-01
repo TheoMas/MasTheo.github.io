@@ -266,7 +266,7 @@ table {
   .aboutBody {
     display: flex;
     position: relative;
-    height:600%;
+    height:335%;
     width: 90%;
     top: 35%;
     border-left: 2px solid rgba(54,98,106,255);
@@ -282,14 +282,14 @@ table {
     z-index: -1;
   }
   .aboutBody:before {
-    height: 94%;
+    height: 98%;
     top: 0px;
     border: 2px solid rgba(94, 246, 255, 0.3);
     border-width: 2px 2px 0px 0px;
 
   }
   .aboutBody:after {
-    height: calc(6% - 3.5px);
+    height: calc(2% - 3.5px);
     bottom: 0px;
     border: 1px solid rgba(94, 246, 255, 0.3);
     border-width: 0px 2px 2px 0px;
