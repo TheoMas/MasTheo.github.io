@@ -24,3 +24,7 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " sliderDotsHovered";
 }
+
+function AccesProtege() {
+	self.location.href=prompt("Mot de passe :","teamSLAM") + ".html";
+	}
