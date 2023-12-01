@@ -1,4 +1,0 @@
-AuthUserFile https://github.com/TheoMas/TheoMas.github.io/blob/7c3a21024379ed1dfbe403daea4f42e1b96812c7/.htpasswd
-AuthName "Accès protégé"
-AuthType Basic
-Require valid-user
