@@ -1,0 +1,4 @@
+AuthUserFile chemin_absolu/.htpasswd
+AuthName "Accès protégé"
+AuthType Basic
+Require valid-user
