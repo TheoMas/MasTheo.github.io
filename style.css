@@ -697,6 +697,13 @@ table {
   left: -7%;
   }
 
+  #slider2{
+    top: 20%;
+    left: -5%;
+    width: 60%;
+    height: 50%;
+  }
+
   .sliderContainer{
   position: absolute;
   display: flex;
