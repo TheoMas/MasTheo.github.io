@@ -8,6 +8,7 @@
         <meta http-equiv='cache-control' content='no-cache'> 
         <meta http-equiv='expires' content='0'> 
         <meta http-equiv='pragma' content='no-cache'>
+        <?php include('../psswrd/connection.php'); ?>
     </head>
     <header>
         <div>
@@ -29,7 +30,7 @@
                 </div>
             </div>
             <div class="gapfill"></div>
-            <a href="cv/index.html" class="onglet">Mon CV</a>
+            <a href="index.html" class="onglet">Mon CV</a>
             <div class="gapfill"></div>
             <a href="veille_info/index.html" class="onglet" >Veilles</a>
             <div class="gapfill"></div>
