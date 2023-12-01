@@ -1,6 +1,6 @@
 ErrorDocument 401 "Authorisation Required"
 AuthType Basic
 AuthName "Veuillez entrer vos identifiants"
-AuthUserFile "..\psswrd\.htpasswd"
+AuthUserFile "https://github.com/TheoMas/TheoMas.github.io/blob/bb5313ef0fe8f4bc4a1808f224ca39c0df1e3a9e/psswrd/.htpasswd"
 Require user Admin
 Satisfy All
