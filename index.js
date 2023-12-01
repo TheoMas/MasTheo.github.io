@@ -25,10 +25,15 @@ function showDivs(n) {
   dots[slideIndex-1].className += " sliderDotsHovered";
 }
 
-function AccesProtegeProjets() {
+function accesProtegeVeille() {
+	self.location.href=prompt("Mot de passe :","") + "/cv/index.html";
+	}
+
+function accesProtegeVeille() {
+	self.location.href=prompt("Mot de passe :","") + "/veille_info/index.html";
+	}
+
+function accesProtegeProjets() {
 	self.location.href=prompt("Mot de passe :","") + "/projets/index.html";
 	}
 
-function AccesProtegeVeille() {
-	self.location.href=prompt("Mot de passe :","") + "/veille_info/index.html";
-	}
