@@ -25,7 +25,7 @@ function showDivs(n) {
   dots[slideIndex-1].className += " sliderDotsHovered";
 }
 
-function accesProtegeVeille() {
+function accesProtegeCV() {
 	self.location.href=prompt("Mot de passe :","") + "/cv/index.html";
 	}
 

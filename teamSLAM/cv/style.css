@@ -88,8 +88,18 @@ table {
     background-position: bottom;
     background-color: rgba(0,0,0,255);
     width: 100%;
+    height: 100%;
     overflow-x: hidden;
     
+  }
+
+  footer{
+    background-color: rgba(0,0,0,255);
+    position: relative;
+    width: 100%;
+    height: 10%;
+    top: 40%;
+    overflow-x: hidden; 
   }
 
   .onglet {
@@ -251,4 +261,224 @@ table {
     opacity: 0.5;
     width: 0.2%;  
     border-radius:50px;
+  }
+
+  .CvBody {
+    display: flex;
+    position: relative;
+    height: 7%;
+    width: 90%;
+    top: 25%;
+    border-left: 2px solid rgba(54,98,106,255);
+    overflow: hidden;
+    left: 5%;
+  }
+  .CvBody:after,
+  .CvBody:before {
+    position: absolute;
+    content: '';
+    width: calc(90% - 2px);
+    left: 0px;
+    z-index: -1;
+  }
+  .CvBody:before {
+    height: 80%;
+    top: 0px;
+    border: 2px solid rgba(94, 246, 255, 0.3);
+    border-width: 2px 2px 0px 0px;
+
+  }
+  .CvBody:after {
+    height: calc(20% - 3.5px);
+    bottom: 0px;
+    border: 1px solid rgba(94, 246, 255, 0.3);
+    border-width: 0px 2px 2px 0px;
+    transform: skew(-45deg);
+    transform-origin: right top;
+  }
+  .CvBody:before, .CvBody:after {
+    background: rgba(94, 246, 255, 0.1);
+  }
+
+  .CvTitle {
+    display:block;
+    flex-direction: row ;
+    position:relative;
+    right:0;
+    left: 7%;
+    top:25%;
+    align-items: left;
+    color:rgb(247, 80, 73);
+    text-shadow: 0px 0px 30px rgb(247, 80, 73);
+    font-family: "Cyberpunks";
+    font-size: 60px;
+  }
+
+  .paragraphText{
+    display:block;
+    position: relative;
+    flex-direction: row;
+    width: 80%;
+    left: 2%;
+    border-radius: 5px;
+    padding: 1.5%;
+    color:  rgb(1, 250, 244);
+    font-family:"rajdhani",Arial,sans-serif;
+    text-shadow: 0px 0px 10px  rgb(231,6,216);
+    font-weight: 600;
+    font-size:14px !important;
+    letter-spacing: .08em;
+    text-decoration:none;
+  }
+
+  .paragraphTextSecondary{
+    display:block;
+    position: relative;
+    flex-direction: row;
+    width: 80%;
+    left: 2%;
+    border-radius: 5px;
+    padding: 1.5%;
+    color:  rgba(250,244,1,255);
+    font-family:"rajdhani",Arial,sans-serif;
+    text-shadow: 0px 0px 10px  rgb(231,6,216);
+    font-weight: 600;
+    font-size:14px !important;
+    letter-spacing: .08em;
+    text-decoration:none;
+  }
+  
+  .styleBar{
+    position: relative;
+    left: 1%;
+    border:4px solid rgba(54,98,106,255);
+    display:flex;
+    padding: 7% 0% 0% 0% ;
+  }
+
+  .styleBarSecondary{
+    position: relative;
+    left: 1.5%;
+    border:4px solid rgb(255, 251, 0);
+    display:flex;
+    padding: 7% 0% 0% 0% ;
+  }
+
+  .CV1 {
+    display: flex;
+    position: relative;
+    height: 90%;
+    width: 45%;
+    border-left: 2px solid rgba(250,244,1,255);
+    overflow: hidden;
+    left: 5%;
+  }
+  .CV1:after,
+  .CV1:before {
+    position: absolute;
+    content: '';
+    width: calc(90% - 2px);
+    left: 0px;
+    z-index: -1;
+  }
+  .CV1:before {
+    height: 90%;
+    top: 0px;
+    border: 2px solid rgba(250,244,1,255);
+    border-width: 2px 2px 0px 0px;
+
+  }
+  .CV1:after {
+    height: calc(10% - 3.5px);
+    bottom: 0px;
+    border: 1px solid rgba(250,244,1,255);
+    border-width: 0px 2px 2px 0px;
+    transform: skew(-45deg);
+    transform-origin: right top;
+  }
+
+  .CV2 {
+    display: flex;
+    position: relative;
+    height: 90%;
+    width: 45%;
+    left: 5%;
+    border-left: 2px solid rgba(250,244,1,255);
+    overflow: hidden;
+  }
+  .CV2:after,
+  .CV2:before {
+    position: absolute;
+    content: '';
+    width: calc(90% - 2px);
+    left: 0px;
+    z-index: -1;
+  }
+  .CV2:before {
+    height: 90%;
+    top: 0px;
+    border: 2px solid rgba(250,244,1,255);
+    border-width: 2px 2px 0px 0px;
+
+  }
+  .CV2:after {
+    height: calc(10% - 3.5px);
+    bottom: 0px;
+    border: 1px solid rgba(250,244,1,255);
+    border-width: 0px 2px 2px 0px;
+    transform: skew(-45deg);
+    transform-origin: right top;
+  }
+
+  .CVimage {
+    z-index: 1;
+    width: auto;
+    position: relative;
+    height:95%;
+    top: 3%;
+    left: 5%;
+  }
+
+  .CVadjuster {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    top: 30%;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+  }
+
+  .dlbutton {
+    display:flex;
+    position:relative;
+    height: 5%;
+    width: 10%;
+    border: 2px solid rgba(63,6,17,255);
+    border-radius: 7px;
+    padding: 1.5%;
+    background-color:rgba(9,7,17,255);
+    color: rgb(247, 80, 73);
+    font-family:"rajdhani",Arial,sans-serif;
+    text-shadow: 0px 0px 10px  rgb(247, 80, 73);
+    cursor: pointer;
+    font-weight: 600;
+    font-size:14px !important;
+    letter-spacing: .08em;
+    text-decoration:none;
+    transition: background-color 1s;
+  }
+  
+  .dlbutton:hover {
+    background-color: rgb(4,252,220);
+    padding:1.5%;
+    transition: background-color 0.3s;
+  }
+
+  .dladjuster {
+    display: flex;
+    position: relative;
+    top:30%;
+    left: 15%;
+    gap: 27%;
   }

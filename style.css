@@ -92,6 +92,15 @@ table {
     
   }
 
+  footer{
+    background-color: rgba(0,0,0,255);
+    position: relative;
+    width: 100%;
+    height: 10%;
+    top: 40%;
+    overflow-x: hidden; 
+  }
+
   .onglet {
     display:flex;
     height: 20%;
@@ -417,7 +426,7 @@ table {
   .btsBody {
     display: flex;
     position: relative;
-    height: 9%;
+    height: 11.5%;
     width: 90%;
     top: 30%;
     border-left: 2px solid rgba(54,98,106,255);
