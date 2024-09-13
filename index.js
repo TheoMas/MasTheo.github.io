@@ -1,11 +1,10 @@
 $(window).on('load', function() {
 
     $(this).impulse();
-    $.fn.impulse.default.tempo = 500;
-    $.fn.impulse.default.range = 400;
-    $.fn.impulse.default.leap = 3;
-    $.fn.impulse.default.sloth = 3;
-    $.fn.impulse.default.sloth = 15;
+    $.fn.impulse.default.tempo = 1;
+    $.fn.impulse.default.range = 2000;
+    $.fn.impulse.default.leap = 5;
+    $.fn.impulse.default.curb = 15;
   });
 
   /* from http://ataredo.com/morphology/lucidscroll/ */
