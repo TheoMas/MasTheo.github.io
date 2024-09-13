@@ -2,211 +2,101 @@
     <head>
         <meta charset="UTF-8">
         <!DOCTYPE html>
-        <title Accueil></title>
+        <title>Accueil</title>
         <link href="style.css" rel="stylesheet" media="all" type="text/css">
-        <script src="index.js"></script>
+        <script src="smoothScroll.js"></script>
         <meta http-equiv='cache-control' content='no-cache'> 
         <meta http-equiv='expires' content='0'> 
         <meta http-equiv='pragma' content='no-cache'>
+        
     </head>
     <header>
         <div>
-            <a href="index.html" class="logo">
-                <div class="description">
-                    <img src="assets/logo.png" class="imageLogo" alt="logo accueil" />
-                    <div>Accueil</div>
-                </div>
+            <a href="index.html">
+                <h2 class="hero glitch layers" data-text="Théo MAS"><span>THEO MAS</span></h2>
             </a>
-            <div class="gapfill"></div>
-            <div class="dropdown">
-                Profil
-                <div class="dropdown_content">
-                    <p></p>
-                    <a href="#aPropos">A propos</a>
-                    <a href="#btsSIO">Le BTS SIO</a>
-                    <a href="#certification">Certifications</a>
-                    <a href="#competences">Compétences</a>
-                </div>
-            </div>
-            <div class="gapfill"></div>
-            <a href="cv/index.html" class="onglet">Mon CV</a>
-            <div class="gapfill"></div>
-            <a href="veille_info/index.html" class="onglet" >Veilles</a>
-            <div class="gapfill"></div>
-            <a href="projets/index.html" class="onglet" >Projets</a>
-            <div class="gapfill"></div>
         </div>
     </header>
-    <body onload="currentDiv(1)" >
-        <div class="mainTitleBackground"></div>
-        <div class="mainTitle">
-            <p class="line1">Théo MAS</p>
-            <p class="line2">Bienvenue sur mon</p>
-            <p class="line3">portfolio</p>
+        <script>smoothScroll();</script>
+        <div class="buttonList">
+            <a href="index.html" class="buttonSlide">ACCUEIL</a>
+            <a href="cv/index.html" class="buttonSlide">MON CV</a>
+            <a href="veille_info/index.html" class="buttonSlide" >VEILLES</a>
+            <a href="projets/index.html" class="buttonSlide" >PROJETS</a>
+            <a href="outils/index.html" class="buttonSlide">OUTILS</a>
+            <a href="404.html" class="buttonSlide">COMPÉTENCES</a>
         </div>
-        <div class="aboutTitle">
-            A propos
-        </div>
-        <div id="aPropos"></div>
-        <div class="aboutBody" >
-            <div class="styleBar"></div>
-            <div class="paragraphText">
-                Je m'appelle Théo MAS, j'ai 17 ans et je suis actuellement étudiant en <a href ="#btsSIO" class="refBTS">BTS SIO (Service Informatique aux Organisations)</a>, 
-                je suis passionné d'informatique, de jeux vidéos et de lecture.
-                C'est donc plutot naturellement que je me suis tourné vers des études d'informatique, ayant de plus toujours eu de bonnes experiences,
-                J'ai commencé par un bac Général Technologique STI2D (Sciences et Technologies de l'Industrie et du Developpement Durable) option SIN 
-                (Systemes d'Information et Numérique) et apres mon avoir obtenu mon bac mention bien, j'ai postulé au Lycée René Cassin pour ce
-                BTS SIO.
-            </div>            
-        </div>
-        <div id="btsSIO"></div>
-        <div class="btsTitle">
-            Le BTS SIO
-        </div>
-        <div class="btsBody" >
-            <div class="styleBar"></div>
-            <div class="paragraphText">
-                Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations, 
-                s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur. 
-                Pour par la suite intégrer directement le marché du travail ou continuer des études, dans le domaine de l'informatique.
-                Celui ci se divise en deux options :
-            </div>            
-        </div>
-        <div class="btsAdjuster">
-            <div class="SISRAdjuster">
-                <img class="logoSISR" src="assets/logo_SISR.png" alt="logo_sisr"/>
-                <div class="btsSISRTitle">BTS SISR</div>
-            </div>
-            <div class="SLAMAdjuster">
-                <img class="logoSLAM" src="assets/logo_SLAM.png" alt="logo_slam"/>
-                <div class="btsSLAMTitle">BTS SLAM</div>
-            </div>
-        </div>
-        <div class="btsOptionsAdjuster">
-            <div class="btsSISR">
-                <div class="styleBarSecondary"></div>
-                <div class="paragraphTextSecondary">
-                    BTS SIO option SISR (Solutions d'Infrastructure, Systèmes et Réseau).<br>
-                    Le titulaire du diplôme participe à la production et à la fourniture de services en réalisant ou en adaptant des solutions d’infrastructure et en assurant le fonctionnement optimal des équipements.<br>
-                    Il intervient plus particulièrement dans :<br><br><br>  
+        <div class="separator"></div>
+        <!-- Lignes grises du fond -->
+        <div class="bgLine bgL1"></div>
+        <div class="bgLine bgL2"></div>
+        <div class="bgLine bgL3"></div>
+        <div class="bgLine bgL4"></div>
 
-                    -l’installation, l’intégration, l’administration, la sécurisation des équipements et des services informatiques ;<br><br>
-                    -l’exploitation, la supervision et la maintenance d'une infrastructure ;<br><br>
-                    -la définition et la configuration des postes clients, des serveurs et des équipements d’interconnexion, leur déploiement et leur maintenance ;<br><br>
-                    -la gestion des actifs de l’infrastructure ;<br><br>
-                    -la recherche de réponses adaptées à des besoins d’évolution de l’infrastructure ou à des problèmes liés à la mise à disposition des services informatiques ;<br><br>
-                    -la résolution des incidents et l’assistance aux utilisateurs ;<br><br>
-                    -le maintien de la qualité des services informatiques.<br><br>
+        <div class="bgText bgTxt1">ABOUT ABOUT</div>
+        <div class="bgText bgTxt1 p2"> ABOUT ABOUT </div>
+        <!--Création de la Grid-->
+        <div class="gridWrapper">
+            <!--Titre + bloc de texte-->
+            <div class="textBox txt1">
+                <div class="titles">A PROPOS</div>
+                <div class="largeSeparator"></div>
+                <div class="paragraphText">
+                    Je m'appelle Théo MAS, j'ai 18 ans et je suis actuellement étudiant en <a href ="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" 
+                    class="ref">BTS SIO (Service Informatique aux Organisations)</a>, 
+                    je suis passionné d'informatique, de jeux vidéos et de lecture.
+                    C'est donc plutot naturellement que je me suis tourné vers des études d'informatique, ayant de plus toujours eu de bonnes experiences,
+                    J'ai commencé par un bac Général Technologique STI2D (Sciences et Technologies de l'Industrie et du Developpement Durable) option SIN 
+                    (Systemes d'Information et Numérique) et apres mon avoir obtenu mon bac mention bien, j'ai postulé au Lycée René Cassin pour ce
+                    BTS SIO.
+                </div>      
+            </div> 
+            <!--Dispostion des images-->     
+            <img class="imgBoxes center center1" src="assets/0d765024-11.jpg"/>
+            <img class="imgBoxes back back1" src="assets/proco.png"/>
+            <img class="imgBoxes front front1" src="assets/code.png"/>
+            <img class="imgBoxes float float1" src="assets/brandi-redd-6H9H-tYPUQQ-unsplash.jpg"/>
+
+            <div class="bgText bgTxt2">TOOLS TOOLS</div>
+            <div class="bgText bgTxt2 p2"> TOOLS TOOLS </div>
+
+            <div class="textBox txt2 txtLeft">
+                <div class="titles titleLeft">OUTILS</div>
+                <div class="largeSeparator separatorLeft"></div>
+                <div class="paragraphText">
+                    Dans le cadre de mes études et en dehors, j'ai été formé à divers outils essentiels pour mon domaine. 
+                    J'ai acquis des compétences dans l'utilisation de nombreux outils informatiques tels que Unity ou VS Code. 
+                    Grâce à ma connaissance de ces outils, je suis bien préparé pour relever les défis professionnels et contribuer de manière significative à tout projet. 
+                    <a href="outils/index.html" class="buttonSlide inText inLeft">EN SAVOIR PLUS</a>
                 </div>
             </div>
-            <div class="btsSLAM">
-                <div class="styleBarSecondary"></div>
-                <div class="paragraphTextSecondary">
-                    BTS SIO option SLAM (Solution Logicielles et Applications Métier).<br>
-                    Le titulaire du diplôme participe à la production et à la fourniture de services en développant, 
-                    en adaptant ou en maintenant des solutions applicatives. Il intervient plus particulièrement dans :<br><br><br>
 
-                    -la définition des spécifications techniques à partir de l’expression des besoins des utilisateurs et des contraintes de l’organisation préalablement recensées ;<br><br>
-                    -la réalisation ou l’adaptation puis la validation de solutions applicatives à l’aide des environnements de développement retenus ;<br><br>
-                    -la gestion du patrimoine applicatif ;<br><br>
-                    -la rédaction de la documentation d’une solution applicative et la formation des utilisateurs :<br><br>
-                    -la recherche de réponses adaptées à des problèmes liés à la fourniture des services informatiques ;<br><br>
-                    -l’accompagnement et l’assistance des utilisateurs ;<br><br>
-                    -le maintien de la qualité des services informatiques.
+            <img class="imgBoxes center center2" src="assets/VS-code.png"/>
+            <img class="imgBoxes back back2" src="assets/unity.png"/>
+            <img class="imgBoxes front front2" src="assets/Virtualbox_logo.png"/>
+            <img class="imgBoxes float float2" src="assets/vs-logo.png"/>
+
+            <div class="bgText bgTxt3">SKILLS SKILLS</div>
+            <div class="bgText bgTxt3 p2"> SKILLS SKILLS </div>
+
+            <div class="textBox txt3">
+                <div class="titles">COMPÉTENCES</div>
+                <div class="largeSeparator"></div>
+                <div class="paragraphText">
+                    Je possède de nombreuses compétences informatiques, incluant la maîtrise de HTML et CSS pour le développement web, 
+                    ainsi que des compétences en programmation avec C# par exemple. Je suis également à l'aise avec les systèmes de gestion de bases de données notamment MySQL et SQLite, 
+                    De plus, j'ai des connaissances en cybersécurité pour protéger les systèmes informatiques. 
+                    Cette polyvalence me permet d'aborder divers projets avec assurance.
+                    <a href="competences/index.html" class="buttonSlide inText">EN SAVOIR PLUS</a>
                 </div>
             </div>
+            <img class="imgBoxes center center3" src="assets/1522635669452_11.jpg"/>
+            <img class="imgBoxes back back3" src="assets/formation-html.jpg"/>
+            <img class="imgBoxes front front3" src="assets/CSS3Logo.png"/>
+            <img class="imgBoxes float float3" src="assets/PythonLogo.png"/>
         </div>
-        <div id="certification"></div>
-        <img class="certifLogo" src="assets/certifLogo.png" alt="certifLogo"/>
-        <div class="certifTitle">
-            Certifications
-        </div>
-        <div class="certifBody">
-            <div class="styleBar"></div>
-            <div class="paragraphText">
-                Ces connaissances on étées acquises lors de ma formation en BTS, ces formations m'ont permis d'acquerir diverses compétences informatiques.
-            </div>
-        </div>
-        <div class="slider">
-            <div class="styleBar"></div>
-            <img class="sliderImage" src="assets/CertifSecuNum.jpg" alt="sliderImage1">
-            <img class="sliderImage" src="assets/CertifOpenClassrooms.png" alt="sliderImage2" id="slider2">
-            <img class="sliderImage" src="assets/placeholder3.jpg" alt="sliderImage3">
-            <div class="sliderContainer">
-                <div class="sliderLeftArrow" onclick ="plusDivs(-1)">&#10094</div>
-                <div class="sliderRightArrow" onclick="plusDivs(1)">&#10095</div>
-                <span class="sliderDot" onclick="currentDiv(1)"></span>
-                <span class="sliderDot" onclick="currentDiv(2)"></span>
-                <span class="sliderDot" onclick="currentDiv(3)"></span>
-            </div>
-        </div>
-        <div id="competences"></div>
-        <img class="compLogo" src="assets/compLogo.png">
-        <div class="compTitle">
-            Compétences
-        </div>
-        <div class="compBody">
-            <!--Première rangée-->
-            <div class="compCasing" id="compFirstRow">
-                <div class="compStyleBar"></div>
-                <img src="assets/HTML5Logo.png" class="compCasedLogos" alt="competenceLogo">
-            </div>
-            <div class="compCasing" id="compFirstRow">
-                <div class="compStyleBar"></div>
-                <img src="assets/CSS3Logo.png" class="compCasedLogos" alt="competenceLogo">
-            </div>
-            <div class="compCasing" id="compFirstRow">
-                <div class="compStyleBar"></div>
-                <img src="assets/JavaScript-Logo.png" class="compCasedLogos" alt="competenceLogo">
-            </div>
-            <div class="compCasing" id="compFirstRow">
-                <img src="assets/PythonLogo.png" class="compCasedLogos" id="adjustImage" alt="competenceLogo">
-                <div class="compStyleBar"></div>
-            </div>
-            <div class="compCasing" id="compFirstRow">
-                <img src="assets/c++Logo.png" class="compCasedLogos" id="adjustImage" alt="competenceLogo">
-                <div class="compStyleBar"></div>
-            </div>
-            <!--
-            <div class="compCasing" id="compFirstRow">
-                <div class="compStyleBar"></div>
-            </div>
-            <div class="compCasing" id="compFirstRow">
-                <div class="compStyleBar"></div>
-            </div>
-
-            <div class="compCasing" id="compFirstRoW">
-                <div class="compStyleBar"></div>
-            </div>
-            <!-Deuxieme rangée->
-            <div class="compCasing" id="compSecondRow">
-                <div class="compStyleBar"></div>
-            </div>
-            <div class="compCasing" id="compSecondRow">
-                <div class="compStyleBar"></div>
-            </div>
-            <div class="compCasing" id="compSecondRow">
-                <div class="compStyleBar"></div>
-            </div>
-            <div class="compCasing" id="compSecondRow">
-                <div class="compStyleBar"></div>
-            </div>
-            <div class="compCasing" id="compSecondRow">
-                <div class="compStyleBar"></div>
-            </div>
-            <div class="compCasing" id="compSecondRow">
-                <div class="compStyleBar"></div>
-            </div>
-            <div class="compCasing" id="compSecondRow">
-                <div class="compStyleBar"></div>
-            </div>
-            <div class="compCasing" id="compSecondRow">
-                <div class="compStyleBar"></div>
-            </div>
-            -->
-        </div>
-
     </body>
     <footer>
+        <a href="mentions/mentions.html" class="buttonSlideWhite mLegales">MENTIONS LÉGALES</a> <a href="contact/contact.html" class="buttonSlideWhite contact">CONTACT</a> 
     </footer>
 </html>

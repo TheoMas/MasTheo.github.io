@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="contact.css" rel="stylesheet" media="all" type="text/css">
+        <script src="contact.js"></script>
+        <title>Contact</title>
+    </head>
+    <header>
+        <a href="../index.html">
+            <h2 class="hero glitch layers" data-text="Théo MAS"><span>THEO MAS</span></h2>
+        </a>
+        <div class="buttonList">
+            <a href="../index.html" class="buttonSlide">ACCUEIL</a>
+            <a href="../cv/index.html" class="buttonSlide">MON CV</a>
+            <a href="../veille_info/index.html" class="buttonSlide" >VEILLES</a>
+            <a href="../projets/index.html" class="buttonSlide" >PROJETS</a>
+            <a href="../404.html" class="buttonSlide">OUTILS</a>
+            <a href="../404.html" class="buttonSlide">COMPÉTENCES</a>
+        </div>
+    </header>
+    <body>
+        <div class="textBox">
+            <div class="titles">CONTACTEZ MOI !</div>
+            <div class="largeSeparator"></div>
+            <div class="paragraphText">
+                Si vous avez une question, ou que vous voulez juste me parler, n'hesitez pas a me contacter !
+            </div>
+        </div>
+        <div class="formArea">
+        <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/mldrknyp"method="POST">
+                <label>
+                    <input class="email" type="email" name="email" placeholder="Email" required>
+                </label>       
+                <label>
+                    <input class="name" type="name" name="name" placeholder="Nom" required>
+                </label>
+                <br>
+                <label>
+                    <textarea class="message" name="message" placeholder="Message" required></textarea>
+                </label>
+                <br>
+                <button type="submit" class="buttonSlide formButton">Envoyer</button>
+            </form>
+        </div>
+    </body>
+</html>
