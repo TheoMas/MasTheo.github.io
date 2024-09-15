@@ -38,6 +38,7 @@ body{
 header{
     z-index: 0;
     height: 13%;
+    border-bottom: 1px solid rgb(236,78,0);
     background-color: rgb(8, 8, 8);
 }
 
@@ -145,6 +146,34 @@ header{
     outline: none !important;
     border: 2px solid rgb(57, 57, 57);
     border-bottom: 2px solid rgb(236,78,0);
+}
+
+.buttonText {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 2px solid white;
+  padding: 1.5%;
+  color: white;
+  background-color: transparent;
+  font-family:"rajdhani",Arial,sans-serif;
+  cursor: pointer;
+  font-weight: 600;
+  font-size:14px !important;
+  letter-spacing: .08em;
+  text-decoration:none;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  padding: 23px 33px;
+  transition: border 0.3s;
+  transition: color 0.3s;
+}
+
+.buttonText:hover{
+  border-bottom: 2px solid rgb(236,78,0);
+  color: rgb(236,78,0);
 }
 
 .buttonSlide {

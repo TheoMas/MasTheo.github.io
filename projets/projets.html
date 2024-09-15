@@ -3,166 +3,42 @@
         <meta charset="UTF-8">
         <!DOCTYPE html>
         <title Accueil></title>
-        <link href="style.css" rel="stylesheet" media="all" type="text/css">
-        <script src="index.js"></script>
+        <link href="projets.css" rel="stylesheet" media="all" type="text/css">
+        <script src="/projet/projet.js"></script>
         <meta http-equiv='cache-control' content='no-cache'> 
         <meta http-equiv='expires' content='0'> 
         <meta http-equiv='pragma' content='no-cache'>
     </head>
     <header>
-        <div>
-            <a href="../../index.html" class="logo">
-                <div class="description">
-                    <img src="assets/logo.png" class="imageLogo" alt="logo accueil" />
-                    <div>Accueil</div>
-                </div>
-            </a>
-            <div class="gapfill"></div>
-            <div class="dropdown">
-                Profil
-                <div class="dropdown_content">
-                    <p></p>
-                    <a href="../index#aPropos">A propos</a>
-                    <a href="../index#btsSIO">Le BTS SIO</a>
-                    <a href="../index#certification">Certifications</a>
-                    <a href="../index#competences">Compétences</a>
-                </div>
-            </div>
-            <div class="gapfill"></div>
-            <a href="../cv/index.html" class="onglet">Mon CV</a>
-            <div class="gapfill"></div>
-            <a href="../veille_info/index.html" class="onglet" >Veilles</a>
-            <div class="gapfill"></div>
-            <a href="index.html" class="onglet" >Projets</a>
-            <div class="gapfill"></div>
+        <a href="../index.html">
+            <h2 class="hero glitch layers" data-text="Théo MAS"><span>THEO MAS</span></h2>
+        </a>
+        <div class="buttonList">
+            <a href="/index.html" class="buttonText">ACCUEIL</a>
+            <a href="/cv/cv.html" class="buttonText">MON CV</a>
+            <a href="/contact/contact.html" class="buttonText" >CONTACT</a>
+            <a href="/projets/projets.html" class="buttonText" >PROJETS</a>
+            <a href="/404.html" class="buttonText">OUTILS</a>
+            <a href="/404.html" class="buttonText">COMPÉTENCES</a>
         </div>
     </header>
     <body>
-        <div class="mainTitle">
-            Projets
-        </div>
-        <div class="projectBody" >
-            <div class="styleBar"></div>
-            <div class="paragraphText">
-                Si dessous sont présents les projets et TPs que j'ai réalisés au cours de mon BTS, ils sont de plus disponibles au téléchargement (cliquez sur le projet qui vous intéresse).
-            </div>            
-        </div>
-        <div class="blocTitle" id="blocTitle1">
-            Projets en Bloc 1
-        </div>
-        <div class="blocBody" id="blocBody1">
-            <div class="styleBar"></div>
-            <div class="gridBody">
-                <!--TP M.Hebraoui-->
-                <div class="projectCasing" onmouseover="onImage('TPH1', 'TPH1Link', 'TPH1TextButton')"; onmouseout="outImage('TPH1', 'TPH1Link', 'TPH1TextButton')";>
-                    <a href="assets/TPH1.zip" download="TPH1">
-                        <img class="projectImage" id="TPH1" src="assets/TPH1.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPH1Link" href="assets/TPH1.zip" download="TPH1"><p id="TPH1Button">TP Hebraoui 1</p></a>
+        <div class="wrapper"> 
+            <div class="projetPro">
+                <div class="projetProBg"></div>
+                <div class="textBox txt2">
+                    <div class="titles titleWhite">PROJETS PROFESSIONELS</div>
+                    <a href="/projets/projetsProSlider.html" class="buttonSlideWhite">PROJETS EN VEDETTE</a>
+                    <a href="/projets/projetsProList.html" class="link white">Ou regardez la liste des projets</a>
                 </div>
-
-                <div class="projectCasing" onmouseover="onImage('TPH2', 'TPH2Link', 'TPH2TextButton')"; onmouseout="outImage('TPH2', 'TPH2Link', 'TPH2TextButton')";>
-                    <a href="assets/TPH2.zip" download="TPH2">
-                        <img class="projectImage" id="TPH2" src="assets/TPH2.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPH2Link" href="assets/TPH2.zip" download="TPH2"><p id="TPH2Button">TP Hebraoui 2</p></a>
-                </div>
-
-                <div class="projectCasing" onmouseover="onImage('TPH3', 'TPH3Link', 'TPH3TextButton')"; onmouseout="outImage('TPH3', 'TPH3Link', 'TPH3TextButton')";>
-                    <a href="assets/TPH3.docx" download="TPH3">
-                        <img class="projectImage" id="TPH3" src="assets/TPH3.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPH3Link" href="assets/TPH3.docx" download="TPH3"><p id="TPH3Button">TP Assemblage PC</p></a>
-                </div>
-
-                <div class="projectCasing" onmouseover="onImage('TPH4', 'TPH4Link', 'TPH4TextButton')"; onmouseout="outImage('TPH4', 'TPH4Link', 'TPH4TextButton')";>
-                    <a href="assets/TPH4.odt" download="TPH4">
-                        <img class="projectImage" id="TPH4" src="assets/TPH4.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPH4Link" href="assets/TPH4.odt" download="TPH4"><p id="TPH4Button">TP OCS Inventory</p></a>
-                </div>
-                
-                <div class="projectCasing" onmouseover="onImage('TPH5', 'TPH5Link', 'TPH5TextButton')"; onmouseout="outImage('TPH5', 'TPH5Link', 'TPH5TextButton')";>
-                    <a href="assets/TPH5.odt" download="TPH5">
-                        <img class="projectImage" id="TPH5" src="assets/TPH5.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPH5Link" href="assets/TPH5.odt" download="TPH5"><p id="TPH5Button">TP Hebraoui 3</p></a>
-                </div>                
-
-                <!--TP Mme.Robert-->
-                <div class="projectCasing" onmouseover="onImage('TPR1', 'TPR1Link', 'TPR1TextButton')"; onmouseout="outImage('TPR1', 'TPR1Link', 'TPR1TextButton')";>
-                    <a href="assets/TPR1.odt" download="TPR1">
-                        <img class="projectImage" id="TPR1" src="assets/TPR1.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPR1Link" href="assets/TPR1.odt" download="TPR1"><p id="TPR1Button">TP Robert 1</p></a>
-                </div>
-                
-                <div class="projectCasing" onmouseover="onImage('TPR2', 'TPR2Link', 'TPR2TextButton')"; onmouseout="outImage('TPR2', 'TPR2Link', 'TPR2TextButton')";>
-                    <a href="assets/TPR2.odt" download="TPR2">
-                        <img class="projectImage" id="TPR2" src="assets/TPR2.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPR2Link" href="assets/TPR2.odt" download="TPR2"><p id="TPR2Button">TP Robert 2</p></a>
-                </div>
-
-                <div class="projectCasing" onmouseover="onImage('TPR3', 'TPR3Link', 'TPR3TextButton')"; onmouseout="outImage('TPR3', 'TPR3Link', 'TPR3TextButton')";>
-                    <a href="assets/TPR3.odt" download="TPR3">
-                        <img class="projectImage" id="TPR3" src="assets/TPR3.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPR3Link" href="assets/TPR3.odt" download="TPR3"><p id="TPR3Button">TP Robert 3</p></a>
-                </div>
-                <!--TP Mr.Troestler-->
-                <div class="projectCasing" onmouseover="onImage('TPT1', 'TPT1Link', 'TPT1TextButton')"; onmouseout="outImage('TPT1', 'TPT1Link', 'TPT1TextButton')";>
-                    <a href="assets/TPT1.zip" download="TPT1">
-                        <img class="projectImage" id="TPT1" src="assets/TPT1.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPT1Link" href="assets/TPT1.zip" download="TPT1"><p id="TPT1Button">TP Troestler 1</p></a>
-                </div>
-
-                <div class="projectCasing" onmouseover="onImage('TPT2', 'TPT2Link', 'TPT2TextButton')"; onmouseout="outImage('TPT2', 'TPT2Link', 'TPT2TextButton')";>
-                    <a href="assets/TPT2.odt" download="TPT2">
-                        <img class="projectImage" id="TPT2" src="assets/TPT2.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPT2Link" href="assets/TPT2.odt" download="TPT2"><p id="TPT2Button">TP Troestler 2</p></a>
-                </div>
-                <!--TP Mr.Kreyder-->
-                <div class="projectCasing" onmouseover="onImage('TPK1', 'TPK1Link', 'TPK1TextButton')"; onmouseout="outImage('TPK1', 'TPK1Link', 'TPK1TextButton')";>
-                    <a href="assets/TPK1.zip" download="TPK1">
-                        <img class="projectImage" id="TPK1" src="assets/TPK1.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPK1Link" href="assets/TPK1.zip" download="TPK1"><p id="TPK1Button">TP Kreyder 1</p></a>
-                </div>             
             </div>
-        </div>
-        <div class="blocTitle" id="blocTitle3">
-            Projets en Bloc 3
-        </div>
-        <div class="blocBody" id="blocBody3">
-            <div class="styleBar"></div>
-            <div class="gridBody">
-                <div class="projectCasing" onmouseover="onImage('TPH6', 'TPH6Link', 'TPH6TextButton')"; onmouseout="outImage('TPH6', 'TPH6Link', 'TPH6TextButton')";>
-                    <a href="assets/TPH6.odt" download="TPH6">
-                        <img class="projectImage" id="TPH6" src="assets/TPH6.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPH6Link" href="assets/TPH6.odt" download="TPH6"><p id="TPH6Button">TP Hebraoui 1</p></a>
+            <div class="projetPerso">
+                <div class="projetPersoBg"></div>
+                <div class="textBox txt1">
+                    <div class="titles titleBlack">PROJETS PERSONELS</div>
+                    <a href="/projets/projetsPersoSlider.html" class="buttonSlideBlack">PROJETS EN VEDETTE</a>
+                    <a href="/projets/projetsPersoList.html" class="link black">Ou regardez la liste des projets</a>
                 </div>
-                <div class="projectCasing" onmouseover="onImage('TPR4', 'TPR4Link', 'TPR4TextButton')"; onmouseout="outImage('TPR4', 'TPR4Link', 'TPR4TextButton')";>
-                    <a href="assets/TPR4.zip" download="TPR4">
-                        <img class="projectImage" id="TPR4" src="assets/TPR4.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPR4Link" href="assets/TPR4.zip" download="TPR4"><p id="TPR4Button">TP Robert 1</p></a>
-                </div>
-                <div class="projectCasing" onmouseover="onImage('TPW1', 'TPW1Link', 'TPW1TextButton')"; onmouseout="outImage('TPW1', 'TPW1Link', 'TPW1TextButton')";>
-                    <a href="assets/TPW1.zip" download="TPW1">
-                        <img class="projectImage" id="TPW1" src="assets/TPW1.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPW1Link" href="assets/TPW1.zip" download="TPW1"><p id="TPW1Button">TP Wurtz 1</p></a>
-                </div>
-                <div class="projectCasing" onmouseover="onImage('TPW2', 'TPW2Link', 'TPW2TextButton')"; onmouseout="outImage('TPW2', 'TPW2Link', 'TPW2TextButton')";>
-                    <a href="assets/TPW2.zip" download="TPW2">
-                        <img class="projectImage" id="TPW2" src="assets/TPW2.jpg"/>
-                    </a> 
-                    <a class="projectTitle" id="TPW2Link" href="assets/TPW2.zip" download="TPW2"><p id="TPW2Button">TP Wurtz 2</p></a>
-                </div>                                
             </div>
         </div>
     </body>
