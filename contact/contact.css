@@ -36,10 +36,12 @@ body{
 }
 
 header{
-    z-index: 0;
-    height: 13%;
-    border-bottom: 1px solid rgb(236,78,0);
-    background-color: rgb(8, 8, 8);
+  position: absolute;
+  z-index: 10;
+  height: 13%;
+  width: 100%;
+  border-bottom: 1px solid rgb(236,78,0);
+  background-color: rgb(8, 8, 8);
 }
 
 .hero {
@@ -52,7 +54,8 @@ header{
   z-index: 2;
   letter-spacing: -2px;
   transition: color 0.3s;
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 
 .hero:hover{
@@ -61,16 +64,16 @@ header{
 }
 
 .buttonList{
-    top: -105%;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    left: 19%;
-    width: 80%;
-    height: 100%;
-    z-index: 3;
-    position: relative;
-    gap: 5px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  left: 19%;
+  width: 80%;
+  height: 100%;
+  z-index: 3;
+  position: absolute;
+  gap: 5px;
 }
 
 .formArea{

@@ -3,6 +3,11 @@
     src:url("assets/Rajdhani-Bold.ttf");
 }
 
+@font-face{
+  font-family: "rajdhani";
+  src:url("assets/Rajdhani-Regular.ttf");
+}
+
 ::-moz-selection {
     color: black;
     background: rgb(236,78,0);

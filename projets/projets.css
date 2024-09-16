@@ -1,11 +1,16 @@
 @font-face{
   font-family: "rajdhani bold";
-  src:url("../assets/Rajdhani-Bold.ttf");
+  src:url("/assets/Rajdhani-Bold.ttf");
 }
 
 @font-face{
   font-family: "Roboto";
-  src:url("../assets/RobotoCondensed-Black.ttf");
+  src:url("/assets/RobotoCondensed-Black.ttf");
+}
+
+@font-face{
+  font-family: "rajdhani";
+  src:url("/assets/Rajdhani-Regular.ttf");
 }
 
 ::-moz-selection {
@@ -45,7 +50,7 @@ header{
 .hero {
   font-family: 'Roboto', Times, serif ;
   left: 3%;
-  font-size: 40px;
+  font-size: 2.5cqw;
   line-height: 1;
   display: inline-block;
   color: black;
@@ -71,7 +76,7 @@ header{
   height: 100%;
   z-index: 3;
   position: absolute;
-  gap: 5px;
+  gap: 0.5%;
 }
 
 .buttonText {
@@ -82,16 +87,15 @@ header{
   padding: 1.5%;
   color: white;
   background-color: transparent;
-  font-family:"rajdhani",Arial,sans-serif;
+  font-family:"rajdhani";
   cursor: pointer;
   font-weight: 600;
-  font-size:14px !important;
+  font-size:0.9cqw !important;
   letter-spacing: .08em;
   text-decoration:none;
   overflow: hidden;
   z-index: 1;
   position: relative;
-  padding: 23px 33px;
   transition: border 0.3s;
   transition: color 0.3s;
 }
@@ -113,7 +117,7 @@ header{
   font-family:"rajdhani",Arial,sans-serif;
   cursor: pointer;
   font-weight: 600;
-  font-size:14px !important;
+  font-size:0.7cqw !important;
   letter-spacing: .08em;
   text-decoration:none;
   overflow: hidden;
@@ -160,7 +164,7 @@ header{
   font-family:"rajdhani",Arial,sans-serif;
   cursor: pointer;
   font-weight: 600;
-  font-size:14px !important;
+  font-size:0.7cqw !important;
   letter-spacing: .08em;
   text-decoration:none;
   overflow: hidden;
@@ -223,7 +227,7 @@ header{
   letter-spacing: -3px;
   font-family: "rajdhani bold", serif;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 6cqw;
   transition: all 0.5s;
 }
 
@@ -247,7 +251,7 @@ header{
   position: relative;
   font-family:"roboto condensed", sans-serif;
   color: white;
-  font-size: 17px;
+  font-size: 1cqw;
   font-weight: 300;
   line-height: 26px;
   letter-spacing: 0px;
@@ -325,7 +329,7 @@ header{
   letter-spacing: 0;
   font-family: "rajdhani bold", serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.1cqw;
 }
 
 .white{
