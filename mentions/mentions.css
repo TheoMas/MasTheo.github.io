@@ -8,14 +8,18 @@
     src:url("../assets/RobotoCondensed-Black.ttf");
   }
 
+  :root {
+    --main-color: #003C62;
+  }
+
 ::-moz-selection {
     color: black;
-    background: rgb(236,78,0);
+    background: var(--main-color);
 }
   
 ::selection {
     color: black;
-    background: rgb(236,78,0);
+    background: var(--main-color);
 }
 
 html{
@@ -31,76 +35,99 @@ body{
     letter-spacing: -7px;
     gap:10px;
     width: 100%;
-    height: 85%;
+    height: 100%;
     overflow-x: hidden;
 
 }
 
 header{
-    z-index: 0;
-    height: 13%;
-    border-bottom: 1px solid rgb(236,78,0);
-    background-color: rgb(8, 8, 8);
+  position: absolute;
+  z-index: 10;
+  height: 13%;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 2px solid gray;
+}
+
+header::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0.03;
+  background-size: 300%;
+  background-position: 100%;
 }
 
 .hero {
   font-family: 'Roboto', Times, serif ;
   left: 3%;
-  font-size: 40px;
+  font-size: 2.5cqw;
   line-height: 1;
   display: inline-block;
-  color: #fff;
+  color: white;
   z-index: 2;
   letter-spacing: -2px;
   transition: color 0.3s;
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 
 .hero:hover{
-  color: rgb(236,78,0);
+  color: var(--main-color);
   transition: color 0.3s;
 }
 
 .buttonList{
-    top: -105%;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    left: 19%;
-    width: 80%;
-    height: 100%;
-    z-index: 3;
-    position: relative;
-    gap: 5px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  left: 19%;
+  width: 80%;
+  height: 100%;
+  z-index: 3;
+  position: absolute;
+  gap: 0.5%;
 }
 
 .buttonText {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-bottom: 2px solid white;
-    padding: 1.5%;
-    color: white;
-    background-color: transparent;
-    font-family:"rajdhani",Arial,sans-serif;
-    cursor: pointer;
-    font-weight: 600;
-    font-size:14px !important;
-    letter-spacing: .08em;
-    text-decoration:none;
-    overflow: hidden;
-    z-index: 1;
-    position: relative;
-    padding: 23px 33px;
-    transition: border 0.3s;
-    transition: color 0.3s;
-  }
-  
-  .buttonText:hover{
-    border-bottom: 2px solid rgb(236,78,0);
-    color: rgb(236,78,0);
-  }
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5%;
+  color: white;
+  background-color: transparent;
+  font-family:"rajdhani";
+  cursor: pointer;
+  font-weight: 600;
+  font-size:0.9cqw !important;
+  letter-spacing: .08em;
+  text-decoration:none;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  transition: border 0.3s;
+  transition: color 0.3s;
+}
+
+.buttonText:hover{
+  border-bottom: 2px solid var(--main-color);
+  color: var(--main-color);
+}
+
+.wrapper{
+  position: relative;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  top: 50%;
+}
 
   .textBox{
     position: relative;
@@ -118,7 +145,7 @@ header{
 
   .titles{
     position: relative;
-    color:rgb(236,78,0);
+    color:white;
     letter-spacing: -3px;
     font-family: "rajdhani bold", serif;
     font-weight: 700;
@@ -128,14 +155,14 @@ header{
   .Subtitles{
     padding: none;
     display: inline;
-    color:rgb(236,78,0);
+    color:white;
   }
 
   .largeSeparator{
     position: relative;
     content: "";
     width: 15%;
-    border: 5px solid rgb(236,78,0);
+    border: 5px solid white;
   } 
 
   .paragraphText{
