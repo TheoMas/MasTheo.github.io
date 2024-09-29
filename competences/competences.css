@@ -1,0 +1,477 @@
+@font-face{
+    font-family: "Roboto";
+    src:url("/assets/RobotoCondensed-Black.ttf");
+  }
+  
+  @font-face{
+    font-family: "rajdhani";
+    src:url("/assets/Rajdhani-Regular.ttf");
+  }
+  
+  @font-face{
+    font-family: "rajdhani bold";
+    src:url("/assets/Rajdhani-Bold.ttf");
+  }
+  
+  :root {
+    --main-color: #003C62;
+  }
+  /* var(--main-color) */
+  
+  *, *::after, *::before{
+    box-sizing: border-box;
+  }
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  blockquote, q {
+      quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+  
+  html, body{
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+    header {
+      position: absolute;
+      z-index: 10;
+      height: 13%;
+      width: 100%;
+      top: 0;
+      background-color: transparent;
+    }
+  
+    body{
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-color: #121212;
+      width: 100%;
+      overflow-x: hidden;
+    }
+  
+    body::-webkit-scrollbar {
+      width: 12px; 
+    }
+  
+    body::-webkit-scrollbar-track {
+      background: black; 
+    }
+  
+    body::-webkit-scrollbar-thumb {
+      background-color: var(--main-color); 
+      border-radius: 20px; 
+      border: 3px solid rgb(17,17,17); 
+    }
+  
+    footer{
+      position: relative;
+      display: flex;
+      gap: 2%;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(17,17,17);
+      grid-column: 1/11;
+      grid-row: 13;
+      height: 100%;
+      bottom: 0;
+      z-index: 100000;
+      overflow-x: hidden; 
+      border-top: 2px solid var(--main-color);
+    }
+  
+    ::-moz-selection {
+      color: black;
+      background: var(--main-color);
+    }
+    
+    ::selection {
+      color: black;
+      background: var(--main-color);
+    }
+  
+    .hero {
+      font-family: 'Roboto', Times, serif ;
+      left: 3%;
+      font-size: 2.5cqw;
+      line-height: 1;
+      display: inline-block;
+      color: white;
+      z-index: 2;
+      letter-spacing: -2px;
+      transition: color 0.3s;
+      position: absolute;
+      top: 28%;
+    }
+  
+    .hero:hover{
+      color: var(--main-color);
+      transition: color 0.3s;
+    }
+  
+    .buttonList{
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      left: 19%;
+      width: 80%;
+      height: 100%;
+      z-index: 3;
+      position: absolute;
+      gap: 0.5%;
+    }
+    
+    .buttonText {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 1.5%;
+      color: white;
+      background-color: transparent;
+      font-family:"rajdhani";
+      cursor: pointer;
+      font-weight: 600;
+      font-size:0.9cqw !important;
+      letter-spacing: .08em;
+      text-decoration:none;
+      overflow: hidden;
+      z-index: 1;
+      position: relative;
+      transition: border 0.3s;
+      transition: color 0.3s;
+    }
+    
+    .buttonText:hover{
+      border-bottom: 2px solid var(--main-color);
+      color: var(--main-color);
+    }
+    
+    .buttonSlide {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height: 20%;
+      border: 2px solid white;
+      padding: 1.5%;
+      color: white;
+      background-color: transparent;
+      font-family:"rajdhani",Arial,sans-serif;
+      cursor: pointer;
+      font-weight: 600;
+      font-size:14px !important;
+      letter-spacing: .08em;
+      text-decoration:none;
+      overflow: hidden;
+      z-index: 1;
+      position: relative;
+      padding: 23px 33px;
+      transition: border 0.3s;
+    }
+  
+    .buttonSlide:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(120deg, var(--main-color) 50%, transparent 50%);
+      z-index: -1;
+      background-size: 300%;
+      background-position: 100%;
+      transition: 0.7s;
+    }
+    
+    .buttonSlide:hover{
+      border: 2px solid var(--main-color);
+    }
+  
+    .buttonSlide:hover,
+    .buttonSlide:hover:after {
+      background-position: 0;
+    }
+    
+    .inText{
+      justify-content: center;
+      align-items: center;
+      margin-top: 3%;
+      width: 45%;
+    }
+  
+    .inLeft{
+      left: 55%;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3%;
+      width: 45%;
+    }
+  
+    .largeSeparator{
+      position: relative;
+      content: "";
+      width: 10%;
+      border: 3px solid white;
+    } 
+  
+    .separatorLeft{
+      left: 90%;
+    }
+  
+    .bgLine{
+      position: relative;
+      content: "";
+      overflow: hidden;
+      grid-row: 1/13;
+      height: 100%;
+      width: 0;
+      border: 2px solid rgb(57, 57, 57);
+      opacity: 0.3;
+    }
+  
+    .bgL1{
+      grid-column: 3;
+    }
+  
+    .bgL2{
+      grid-column: 5;
+    }
+  
+    .bgL3{
+      grid-column: 7;
+    }
+  
+    .bgL4{
+      grid-column: 9;
+    }
+  
+    .gridWrapper{
+      display:grid;
+      position: relative;
+      grid-auto-rows: 20%;
+      background-color: #121212;
+      grid-template-columns: repeat(11,10%);
+    }
+  
+    .textBox{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      animation: up-down-text linear;
+      animation-timeline: view();
+      animation-fill-mode: forwards;
+    }
+  
+    .txtLeft{
+      text-align: right;
+    }
+  
+    .txt1{
+      grid-column: 7/10;
+      grid-row: 3;
+    }
+  
+    .txt2{
+      grid-column: 2/5;
+      grid-row: 6;
+    }
+  
+    .txt3{
+      grid-column: 7/10;
+      grid-row:9;
+    }
+  
+    .titles{
+      display: flex;
+      position: relative;
+      color:white;
+      letter-spacing: -3px;
+      font-family: "rajdhani bold";
+      font-weight: 700;
+      font-size: 60px;
+    }
+  
+    .titleLeft{
+      justify-content: right;
+    }
+  
+    .paragraphText{
+      position: relative;
+      font-family:"rajdhani", sans-serif;
+      color: white;
+      font-size: 1cqw;
+      font-weight: 300;
+      line-height: 26px;
+      letter-spacing: 0.01cqw;
+    }
+
+    .imgBoxes1{
+      height: 80%;
+      width: 50%;
+    }
+
+    .imgBoxes2{
+      height: 80%;
+      width: 50%;
+    }
+
+    .imgBoxes3{
+      height: 80%;
+      width: 40%;
+    }
+
+    .imgBoxes4{
+      height: 80%;
+      width: 40%;
+    }
+
+    .progressBar{
+        width: 60%;
+        height: 100%;
+        position: relative;
+        background: #555;
+        border-radius: 25px;
+        padding: 0.2cqw;
+    }
+
+    .progressBar > span {
+        display: block;
+        height: 100%;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: var(--main-color);
+        position: relative;
+        overflow: hidden;
+    }
+  
+    .center{
+      z-index: 2;
+      display: flex;
+      gap: 10%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .center1{
+      grid-column: 4/6;
+      grid-row: 3/5;
+      height:69%;
+      width:100%;
+    }
+  
+    .center2{
+      grid-column:2/4;
+      grid-row: 3/5;
+      height: 69%;
+      width: 100%;
+    }
+  
+    .center3{
+      grid-column:7/9;
+      grid-row: 6/8;
+      height: 69%;
+      width: 100%;  
+    }
+    
+    .center4{
+        grid-column: 3/5;
+        grid-row: 9/11;
+        height: 69%;
+        width: 100%;
+    }
+
+    .buttonSlideWhite {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height: 2%;
+      border: 2px solid white;
+      padding: 1.5%;
+      color: white;
+      background-color: transparent;
+      font-family:"rajdhani",Arial,sans-serif;
+      cursor: pointer;
+      font-weight: 600;
+      font-size:14px !important;
+      letter-spacing: .08em;
+      text-decoration:none;
+      overflow: hidden;
+      z-index: 1;
+      position: relative;
+      padding: 23px 33px;
+      transition: border 0.3s;
+      transition: color 0.5s;
+    }
+  
+    .buttonSlideWhite:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(120deg, white 50%, transparent 50%);
+      z-index: -1;
+      background-size: 300%;
+      background-position: 100%;
+      transition: 0.7s;
+    }
+    
+    .buttonSlideWhite:hover{
+      color: black;
+      border: 2px solid white;
+    }
+  
+    .buttonSlideWhite:hover,
+    .buttonSlideWhite:hover:after {
+      background-position: 0;
+    }
+  
+    .contact{
+      width: 13%;
+    }

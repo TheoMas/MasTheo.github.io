@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <!DOCTYPE html>
-        <title>Projets Professionnels</title>
+        <title id="docTitle">Projets Personnels</title>
         <link href="projetSlide.css" rel="stylesheet" media="all" type="text/css">
         <script src="projetsSlider.js"></script>
         <meta http-equiv='cache-control' content='no-cache'> 
@@ -10,23 +10,22 @@
         <meta http-equiv='pragma' content='no-cache'>
     </head>
     <header>
-        <a href="../index.html">
+        <a href="/index.html">
             <h2 class="hero glitch layers" data-text="Théo MAS"><span>THEO MAS</span></h2>
         </a>
         <div class="buttonList">
             <a href="/index.html" class="buttonText">ACCUEIL</a>
-            <a href="/cv/cv.html" class="buttonText">MON CV</a>
             <a href="/contact/contact.html" class="buttonText" >CONTACT</a>
             <a href="/projets/projets.html" class="buttonText" >PROJETS</a>
-            <a href="/404.html" class="buttonText">OUTILS</a>
-            <a href="/404.html" class="buttonText">COMPÉTENCES</a>
+            <a href="/outils/outils.html" class="buttonText">OUTILS</a>
+            <a href="/competences/competences.html" class="buttonText">COMPÉTENCES</a>
         </div>
     </header>
     <body>
         <div class="bodyWrapper">
             <div class="arrowWrapper">
                 <div class="arrowUp" onclick="goUp()" id="goUp">
-                    <svg  width="75" height="50"  viewBox="0 0 75 50">
+                    <svg  width="50" height="50"  viewBox="0 0 75 50">
                         <line x1="10" y1="35" x2="35" y2="10" class="line">
                         </line>
                         <line x1="35" y1="10" x2="60" y2="35" class="line">
@@ -34,7 +33,7 @@
                     </svg>
                 </div>
                 <div class="arrowDown"  onclick="goDown()" id="goDown">
-                    <svg width="75" height="50"  viewBox="0 0 75 50" >
+                    <svg width="50" height="50"  viewBox="0 0 75 50" >
                         <line x1="35" y1="35" x2="10" y2="10" class="line">
                         </line>
                         <line x1="35" y1="35" x2="60" y2="10" class="line" id="line2">
@@ -51,10 +50,10 @@
                 <img class="scrollImage scrImg5" id="5" src="/assets/3171v-chiffre-5.jpeg">
             </div>
             <div class="textBox txt1">
-                <div class="titles">LOREM IPSUM</div>
+                <div class="titles" id="title">LOREM IPSUM</div>
                 <div class="largeSeparator"></div>
-                <div class="paragraphText">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
-                <a href="" class="buttonSlide">VOIR LE PROJET</a>
+                <div class="paragraphText" id="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+                <a href="" class="buttonSlide" id="buttonLink">VOIR LE PROJET</a>
             </div>
         </div>
     </body>

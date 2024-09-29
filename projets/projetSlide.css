@@ -1,4 +1,4 @@
-  @font-face{
+@font-face{
     font-family: "rajdhani bold";
     src:url("/assets/Rajdhani-Bold.ttf");
   }
@@ -37,6 +37,34 @@
   @keyframes goUpfromTop{
     to{
         transform: translateY(-110%);
+    }
+  }
+
+
+  @keyframes goDowntoBot{
+    to{
+        transform: translateY(110%);
+    }
+  }
+
+  @keyframes goDowntoMiddle{
+    to{
+        transform: translateY(110%);
+    }
+  }
+
+  @keyframes goDowntoTop{
+    from{
+        transform: translateY(-340%);
+    }
+    to{
+        transform: translateY(-240%);
+    }
+  }
+
+  @keyframes goDownfromBot{
+    to{
+        transform: translateY(130%);
     }
   }
 
@@ -84,6 +112,7 @@
     justify-content: center;
     position: absolute;
     height: 100%;
+	width: 100%;
   }
   
   .hero {
@@ -227,6 +256,7 @@
   .scrollerWrapper{
     position: absolute;
     width: 30%;
+	min-width: 30%;
     height: 100%;
     left: 20%;
     align-items: center;
@@ -304,4 +334,21 @@
 
   .goUptoBottom{
     animation: goUptoBottom 0.5s linear;
+  }
+
+
+  .goDowntoBot{
+	animation: goDowntoBot 0.5s forwards linear;
+  }
+
+  .goDowntoMiddle{
+	animation: goDowntoMiddle 0.5s forwards linear;
+  }
+
+  .goDowntoTop{
+	animation: goDowntoTop 0.5s forwards linear;
+  }
+
+  .goDownfromBot{
+	animation: goDownfromBot 0.5s forwards linear;
   }

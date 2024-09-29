@@ -1,0 +1,266 @@
+@font-face{
+    font-family: "rajdhani bold";
+    src:url("/assets/Rajdhani-Bold.ttf");
+  }
+  
+  @font-face{
+    font-family: "Roboto";
+    src:url("/assets/RobotoCondensed-Black.ttf");
+  }
+  
+  @font-face{
+    font-family: "rajdhani";
+    src:url("/assets/Rajdhani-Regular.ttf");
+  }
+
+  :root {
+    --main-color: #003C62;
+  }
+  
+  ::-moz-selection {
+    color: black;
+    background: var(--main-color);
+  }
+  
+  ::selection {
+    color: black;
+    background: var(--main-color);
+  }
+  
+  html, body{
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  body{ 
+    margin: 0;
+    background: #131313;
+    font-family: 'rajdhani bold', serif;
+    letter-spacing: -7px;
+    gap:10px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  header{
+    position: absolute;
+    z-index: 10;
+    height: 13%;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  
+  footer{
+    position: absolute;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17,17,17);
+    height: 15%;
+    width: 100%;
+    bottom: -25%;
+    z-index: 100000;
+    overflow-x: hidden; 
+    border-top: 2px solid var(--main-color);
+  }
+
+  .bodyWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .hero {
+    font-family: 'Roboto', Times, serif ;
+    left: 3%;
+    font-size: 2.5cqw;
+    line-height: 1;
+    display: inline-block;
+    color: white;
+    z-index: 2;
+    letter-spacing: -2px;
+    transition: color 0.3s;
+    position: absolute;
+    top: 0;
+  }
+  
+  .hero:hover{
+    color: var(--main-color);
+    transition: color 0.3s;
+  }
+  
+  .buttonList{
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    left: 19%;
+    width: 80%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    gap: 0.5%;
+  }
+  
+  .buttonText {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5%;
+    color: white;
+    background-color: transparent;
+    font-family:"rajdhani";
+    cursor: pointer;
+    font-weight: 600;
+    font-size:0.9cqw !important;
+    letter-spacing: .08em;
+    text-decoration:none;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    transition: border 0.3s;
+    transition: color 0.3s;
+  }
+  
+  .buttonText:hover{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+  }
+
+  .textBox{
+    position: relative;
+    text-align: left;
+    display: flex;
+    left: 20%;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 25%;
+  }
+
+  .titles{
+    position: relative;
+    color:white;
+    letter-spacing: -3px;
+    font-family: "rajdhani bold", serif;
+    font-weight: 700;
+    font-size: 3cqw;
+  }
+
+  .largeSeparator{
+    position: relative;
+    content: "";
+    width: 15%;
+    border: 5px solid white;
+  } 
+
+  .paragraphText{
+    position: relative;
+    font-family:"roboto condensed", sans-serif;
+    color: white;
+    font-size: 0.9cqw;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0px;
+  }
+  
+  .buttonSlideWhite {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 2%;
+    border: 2px solid white;
+    padding: 1.5%;
+    color: white;
+    background-color: transparent;
+    font-family:"rajdhani",Arial,sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    font-size:14px !important;
+    letter-spacing: .08em;
+    text-decoration:none;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    padding: 23px 33px;
+    transition: border 0.3s;
+    transition: color 0.5s;
+  }
+
+  .buttonSlideWhite:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(120deg, white 50%, transparent 50%);
+    z-index: -1;
+    background-size: 300%;
+    background-position: 100%;
+    transition: 0.7s;
+  }
+  
+  .buttonSlideWhite:hover{
+    color: black;
+    border: 2px solid white;
+  }
+
+  .buttonSlideWhite:hover,
+  .buttonSlideWhite:hover:after {
+    background-position: 0;
+  }
+
+  .gridWrapper{
+    display:grid;
+    position: relative;
+    top: 20%;
+    grid-auto-rows: 40%;
+    width: 90%;
+    height: 100%;
+    grid-template-columns: repeat(4,23%);
+    gap: 2%;
+    row-gap: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gridElement{
+    width: 100%;
+    height: 100%;
+    border: 3px white solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    font-size: 1.5cqw;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    opacity: 0.7;
+    transform: scale(1.001);
+  }
+  
+  .gridElement:hover{
+    color: white;
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  .gridElement>img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+  }
+
+  a{
+    text-decoration: none !important;
+  }
